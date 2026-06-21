@@ -1,0 +1,2 @@
+# ClaimGuard AI
+Built an end-to-end Fraud Car Insurance Detection ML pipeline using Databricks Medallion Architecture.  Implemented Bronze, Silver and Gold data layers for data ingestion, cleaning and feature engineering.  Developed fraud detection model using Random Forest achieving XX% accuracy.  Engineered business-driven features such as customer tenure and claim-to-premium ratio to improve fraud prediction performance.

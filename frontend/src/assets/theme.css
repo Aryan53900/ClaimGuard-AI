@@ -1,0 +1,687 @@
+body {
+    margin: 0;
+    background: #f3f4f6;
+    font-family: Inter, sans-serif;
+  }
+  
+  .page {
+    max-width: 1280px;
+    margin: auto;
+    padding: 30px;
+  }
+  
+  .navbar {
+    background: white;
+    border: 2px solid black;
+    border-radius: 22px;
+    padding: 18px 28px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: 800;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .hero {
+    margin-top: 80px;
+  }
+  
+  .hero h1 {
+    font-size: 72px;
+    max-width: 700px;
+    line-height: 1.1;
+  }
+  
+  .hero p {
+    max-width: 550px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .hero button {
+    margin-top: 20px;
+  
+    background: #2563eb;
+    color: white;
+  
+    border: none;
+    border-radius: 14px;
+  
+    padding: 14px 24px;
+    cursor: pointer;
+  }
+  .hero {
+    margin-top: 70px;
+  
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .hero-left h1 {
+    font-size: 92px;
+    line-height: 1;
+    margin-bottom: 30px;
+  }
+  
+  .hero-left p {
+    font-size: 20px;
+    color: #666;
+    max-width: 520px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 18px;
+    margin-top: 30px;
+  }
+  
+  .primary-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 14px 24px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .secondary-btn {
+    background: white;
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 14px 24px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .dashboard-card,
+  .risk-card {
+    background: white;
+    border: 2px solid black;
+    border-radius: 24px;
+    padding: 24px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .stats span {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .risk-circle {
+    width: 130px;
+    height: 130px;
+  
+    border-radius: 50%;
+  
+    border: 10px solid #2563eb;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    font-size: 30px;
+    font-weight: bold;
+  
+    margin: 20px auto;
+    
+  }
+  .navbar {
+    background: white;
+    border: 2px solid black;
+    border-radius: 22px;
+    padding: 18px 28px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    box-shadow: 8px 8px 0px #111;
+  }
+  .dashboard-card,
+.risk-card {
+  background: white;
+  border: 2px solid black;
+  border-radius: 24px;
+  padding: 24px;
+
+  box-shadow: 8px 8px 0px #111;
+}
+.primary-btn,
+.secondary-btn {
+  box-shadow: 4px 4px 0px #111;
+  transition: all 0.2s ease;
+}
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #111;
+}
+.services {
+    margin-top: 120px;
+  }
+  
+  .section-badge {
+    background: #2563eb;
+    color: white;
+  
+    padding: 8px 14px;
+  
+    border-radius: 999px;
+  
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .services h2 {
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .services-grid {
+    display: grid;
+  
+    grid-template-columns: repeat(2, 1fr);
+  
+    gap: 24px;
+  }
+  
+  .feature-card {
+    background: white;
+  
+    border: 2px solid black;
+    border-radius: 24px;
+  
+    padding: 30px;
+  
+    box-shadow: 8px 8px 0px #111;
+  
+    transition: 0.2s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translate(-4px, -4px);
+  }
+  
+  .feature-card.dark {
+    background: #111;
+    color: white;
+  }
+  
+  .feature-card h3 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+  
+  .feature-card p {
+    color: inherit;
+    opacity: 0.8;
+  }
+  
+  .feature-card button {
+    margin-top: 20px;
+  
+    background: none;
+    border: none;
+  
+    font-weight: 700;
+  
+    cursor: pointer;
+  
+    color: inherit;
+  }
+  /* HERO */
+
+.hero-grid {
+    margin-top: 70px;
+  
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+  
+    align-items: center;
+  }
+  
+  .hero-badge {
+    display: inline-block;
+  
+    background: #2563eb;
+    color: white;
+  
+    padding: 8px 16px;
+  
+    border-radius: 999px;
+  
+    font-size: 14px;
+    font-weight: 600;
+  
+    margin-bottom: 25px;
+  }
+  
+  .hero-content h1 {
+    font-size: 96px;
+    line-height: 0.95;
+    margin: 0;
+  }
+  
+  .hero-content p {
+    margin-top: 25px;
+  
+    max-width: 550px;
+  
+    font-size: 22px;
+    color: #666;
+  }
+  
+  .hero-buttons {
+    margin-top: 35px;
+  
+    display: flex;
+    gap: 18px;
+  }
+  
+  .primary-btn,
+  .secondary-btn {
+    border: 2px solid black;
+  
+    border-radius: 18px;
+  
+    padding: 16px 28px;
+  
+    cursor: pointer;
+  
+    font-size: 16px;
+    font-weight: 700;
+  
+    box-shadow: 6px 6px 0 black;
+  }
+  
+  .primary-btn {
+    background: #2563eb;
+    color: white;
+  }
+  
+  .secondary-btn {
+    background: white;
+  }
+  
+  .hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .stats-card {
+    background: white;
+  
+    border: 2px solid black;
+  
+    border-radius: 28px;
+  
+    padding: 28px;
+  
+    box-shadow: 10px 10px 0 black;
+  }
+  
+  .stats-card h4 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .stats-card h2 {
+    margin: 15px 0;
+    font-size: 52px;
+  }
+  
+  .stats-card p {
+    color: #666;
+  }
+  
+  .shield-card {
+    background: white;
+  
+    border: 2px solid black;
+  
+    border-radius: 28px;
+  
+    padding: 35px;
+  
+    text-align: center;
+  
+    box-shadow: 10px 10px 0 black;
+  }
+  
+  .shield-circle {
+    width: 140px;
+    height: 140px;
+  
+    margin: auto;
+  
+    border-radius: 50%;
+  
+    background: #2563eb;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    color: white;
+  
+    font-size: 40px;
+    font-weight: 800;
+  }
+  
+  .shield-card h3 {
+    margin-top: 25px;
+    font-size: 32px;
+  }
+  
+  .shield-card p {
+    color: #666;
+  }
+  .services {
+    margin-top: 140px;
+  }
+  
+  .section-tag {
+    display: inline-block;
+  
+    background: #2563eb;
+    color: white;
+  
+    padding: 8px 16px;
+  
+    border-radius: 999px;
+  
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .services h2 {
+    margin-top: 20px;
+  
+    font-size: 56px;
+  }
+  
+  .service-grid {
+    margin-top: 50px;
+  
+    display: grid;
+  
+    grid-template-columns: 1fr 1fr;
+  
+    gap: 28px;
+  }
+  
+  .feature-card {
+    background: white;
+  
+    border: 2px solid black;
+  
+    border-radius: 28px;
+  
+    padding: 35px;
+  
+    box-shadow: 10px 10px 0 black;
+  }
+  
+  .feature-card h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .feature-card button {
+    margin-top: 25px;
+  
+    background: #2563eb;
+    color: white;
+  
+    border: none;
+  
+    border-radius: 14px;
+  
+    padding: 12px 20px;
+  
+    font-weight: 600;
+  
+    cursor: pointer;
+  }
+  .feature-card {
+    background: white;
+  
+    border: 2px solid black;
+  
+    border-radius: 28px;
+  
+    padding: 35px;
+  
+    min-height: 280px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    transition: 0.25s;
+  
+    box-shadow: 10px 10px 0 black;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .dark-card {
+    background: #111;
+    color: white;
+  }
+  
+  .dark-card p {
+    color: rgba(255,255,255,0.75);
+  }
+  
+  .feature-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    margin-bottom: 20px;
+  }
+  
+  .feature-icon {
+    font-size: 42px;
+  }
+  
+  .feature-card h3 {
+    font-size: 34px;
+    margin-bottom: 14px;
+  }
+  
+  .feature-card p {
+    line-height: 1.7;
+    color: #666;
+  }
+  
+  .feature-btn {
+    margin-top: auto;
+  
+    width: fit-content;
+  
+    background: #2563eb;
+    color: white;
+  
+    border: none;
+  
+    padding: 12px 18px;
+  
+    border-radius: 12px;
+  
+    cursor: pointer;
+  
+    font-weight: 600;
+  }
+  
+  .dark-card .feature-btn {
+    background: white;
+    color: black;
+  }
+  /* WHY CHOOSE */
+
+.why-section {
+    margin-top: 120px;
+  }
+  
+  .why-section h2 {
+    font-size: 52px;
+    max-width: 700px;
+    margin-top: 12px;
+  }
+  
+  .why-grid {
+    margin-top: 50px;
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+  
+  .why-card {
+    background: white;
+  
+    border: 2px solid black;
+    border-radius: 28px;
+  
+    padding: 30px;
+  
+    box-shadow: 10px 10px 0px black;
+  }
+  
+  .why-card h3 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+  
+  .why-card p {
+    color: #666;
+    line-height: 1.7;
+  }
+  .footer {
+    margin-top: 120px;
+    padding: 40px 0;
+  
+    text-align: center;
+    color: #666;
+  }
+  /* PREDICT PAGE */
+
+.predict-header {
+    margin-top: 60px;
+  }
+  
+  .predict-header h1 {
+    font-size: 64px;
+    margin-top: 12px;
+  }
+  
+  .predict-header p {
+    color: #666;
+    max-width: 600px;
+  }
+  
+  .predict-layout {
+    margin-top: 50px;
+  
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 40px;
+  }
+  
+  .predict-form {
+    background: white;
+  
+    border: 2px solid black;
+    border-radius: 28px;
+  
+    padding: 32px;
+  
+    box-shadow: 10px 10px 0 black;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .predict-form input,
+  .predict-form select {
+    padding: 16px;
+  
+    border: 2px solid #ddd;
+    border-radius: 14px;
+  
+    font-size: 16px;
+  }
+  
+  .predict-form button {
+    margin-top: 10px;
+  
+    padding: 16px;
+  
+    border: none;
+    border-radius: 14px;
+  
+    background: #2563eb;
+    color: white;
+  
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .result-card {
+    background: white;
+  
+    border: 2px solid black;
+    border-radius: 28px;
+  
+    padding: 32px;
+  
+    box-shadow: 10px 10px 0 black;
+  }
+  
+  .result-score {
+    font-size: 80px;
+    font-weight: 800;
+  
+    color: #2563eb;
+  
+    margin: 20px 0;
+  }

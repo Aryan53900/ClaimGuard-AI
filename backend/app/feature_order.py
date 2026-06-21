@@ -1,0 +1,21 @@
+FEATURE_COLUMNS = [
+    "months_as_customer",
+    "age",
+    "policy_deductable",
+    "policy_annual_premium",
+    "umbrella_limit",
+    "insured_zip",
+    "capital-gains",
+    "capital-loss",
+    "incident_hour_of_the_day",
+    "number_of_vehicles_involved",
+    "bodily_injuries",
+    "witnesses",
+    "total_claim_amount",
+    "injury_claim",
+    "property_claim",
+    "vehicle_claim",
+    "auto_year",
+    "customer_tenure_days",
+    "claim_to_premium_ratio"
+]
