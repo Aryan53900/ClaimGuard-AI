@@ -989,3 +989,108 @@ body {
 .insight-card li {
   margin-bottom: 15px;
 }
+.image-upload {
+  background: white;
+
+  border: 3px solid black;
+
+  border-radius: 28px;
+
+  padding: 30px;
+
+  box-shadow: 10px 10px 0 black;
+
+  margin-top: 40px;
+}
+
+.upload-box {
+  margin-top: 20px;
+
+  border: 3px dashed #2563eb;
+
+  border-radius: 20px;
+
+  height: 260px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  background: #eff6ff;
+}
+
+.damage-preview {
+  width: 100%;
+
+  max-height: 320px;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  margin-top: 20px;
+
+  border: 3px solid black;
+}
+
+.secondary-btn {
+  margin-top: 20px;
+
+  background: white;
+
+  border: 3px solid black;
+
+  border-radius: 16px;
+
+  padding: 14px 24px;
+
+  cursor: pointer;
+
+  box-shadow: 6px 6px 0 black;
+
+  font-weight: 700;
+}
+
+.secondary-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 black;
+}
+.vision-card{
+
+  margin-top:40px;
+  
+  background:white;
+  
+  border:3px solid black;
+  
+  border-radius:28px;
+  
+  padding:30px;
+  
+  box-shadow:10px 10px 0 black;
+  
+  }
+  
+  .vision-card ul{
+  
+  margin-top:12px;
+  
+  padding-left:20px;
+  
+  }
+  
+  .vision-card li{
+  
+  margin-bottom:8px;
+  
+  }
