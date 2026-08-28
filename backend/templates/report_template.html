@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    * { box-sizing: border-box; }
+    @page { size: A4; margin: 15mm; background-color: #f8fafc; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #1e293b; margin: 0; }
+    .header { background-color: #0f172a; color: #ffffff; padding: 16px; text-align: center; margin-bottom: 20px; }
+    .header h1 { margin: 0; font-size: 20pt; }
+    .header p { margin: 4px 0 0 0; color: #94a3b8; font-size: 10pt; }
+    .card { background: #ffffff; border: 1px solid #e2e8f0; padding: 16px; margin-bottom: 16px; border-radius: 4px; }
+    .card-title { font-size: 12pt; font-weight: bold; border-bottom: 2px solid #f1f5f9; padding-bottom: 6px; margin-bottom: 12px; color: #0f172a; }
+    table { width: 100%; border-collapse: collapse; }
+    td { padding: 8px 0; font-size: 10pt; border-bottom: 1px solid #f8fafc; }
+    .label { font-weight: bold; color: #64748b; width: 40%; }
+    .badge { display: inline-block; padding: 4px 10px; font-weight: bold; font-size: 9pt; border-radius: 3px; }
+    .badge-severe { background-color: #fee2e2; color: #991b1b; }
+    .badge-moderate { background-color: #fef3c7; color: #92400e; }
+    .badge-minor { background-color: #dcfce7; color: #166534; }
+    .tag { display: inline-block; background: #e2e8f0; color: #334155; padding: 3px 8px; margin: 2px; font-size: 8.5pt; }
+    .image-container { text-align: center; margin-bottom: 12px; }
+    .claim-image { max-width: 420px; max-height: 220px; border: 1px solid #cbd5e1; }
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>ClaimGuard AI</h1>
+        <p>Comprehensive Assessment & Vision Verification Report</p>
+    </div>
+
+    <div class="card">
+        <div class="card-title">Claim & Prediction Summary</div>
+        <table>
+            <tr><td class="label">Total Claim Amount</td><td>₹{{ claim_amount }}</td></tr>
+            <tr><td class="label">Fraud Probability</td><td style="font-weight:bold; color:{% if fraud_score > 50 %}#dc2626{% else %}#16a34a{% endif %};">{{ fraud_score }}%</td></tr>
+            <tr><td class="label">Status</td><td>{% if fraud_score > 50 %}FLAGGED FOR INVESTIGATION{% else %}APPROVED FOR DIRECT PROCESSING{% endif %}</td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <div class="card-title">Visual Damage Assessment</div>
+        {% if image_path %}
+        <div class="image-container">
+            <img class="claim-image" src="{{ image_path }}" alt="Vehicle Damage Evidence" />
+        </div>
+        {% endif %}
+        <table>
+            <tr>
+                <td class="label">Damage Severity</td>
+                <td>
+                    <span class="badge {% if severity == 'Severe' %}badge-severe{% elif severity == 'Moderate' %}badge-moderate{% else %}badge-minor{% endif %}">
+                        {{ severity }}
+                    </span>
+                </td>
+            </tr>
+            <tr><td class="label">Estimated Repair Cost</td><td>{{ repair_cost }}</td></tr>
+            <tr>
+                <td class="label">Damaged Parts Identified</td>
+                <td>
+                    {% for part in parts %}
+                        <span class="tag">{{ part }}</span>
+                    {% endfor %}
+                </td>
+            </tr>
+        </table>
+        {% if indicators %}
+        <p style="font-size: 9.5pt; color: #475569; margin-top: 10px; line-height: 1.4;">
+            <strong>Adjuster Notes:</strong> {{ indicators }}
+        </p>
+        {% endif %}
+    </div>
+</body>
+</html>
